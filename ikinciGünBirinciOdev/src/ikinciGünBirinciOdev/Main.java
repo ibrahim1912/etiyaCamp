@@ -1,8 +1,17 @@
 package ikinciGünBirinciOdev;
 
+import java.io.FileDescriptor;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
+import java.nio.charset.StandardCharsets;
+
 public class Main {
 
 	public static void main(String[] args) {
+		System.setOut(new PrintStream(new FileOutputStream(FileDescriptor.out), true,
+				StandardCharsets.UTF_8));
+		
+		
 		Instructor instructor1 = new Instructor(1, "Engin", "Demiroğ", "Yazılım");
 		Instructor instructor2 = new Instructor(2, "Murat", "Yücedağ", "Yazılım");
 		Category category1 = new Category(1, "Programlama");

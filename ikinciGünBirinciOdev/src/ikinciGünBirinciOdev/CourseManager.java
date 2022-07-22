@@ -13,7 +13,17 @@ public class CourseManager {
 
 	public void add(Course course) {
 		courses.add(course);
-		System.out.println("Eklendi: " + course.getName());
+		System.out.println(course.getName() + " Eklendi" );
+	}
+	
+	public void delete(Course course) {
+		
+		System.out.println(course.getName() + " Silindi");
+	}
+	
+	public void update(Course course) {
+		
+		System.out.println(course.getName() + " Güncellendi");
 	}
 
 	public List<Course> getAll() {

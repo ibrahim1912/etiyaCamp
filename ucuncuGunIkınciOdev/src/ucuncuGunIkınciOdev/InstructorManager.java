@@ -1,7 +1,8 @@
-package ikinciGünBirinciOdev;
+package ucuncuGunIkınciOdev;
 
 import java.util.ArrayList;
 import java.util.List;
+
 
 public class InstructorManager {
 
