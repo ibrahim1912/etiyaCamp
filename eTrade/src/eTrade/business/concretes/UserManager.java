@@ -95,9 +95,7 @@ public class UserManager implements UserService {
 		if (!matcher.matches()) {
 			throw new Exception("E-posta alanı e-posta formatında olmalıdır.");
 		}
-		if (email.isEmpty()) {
-			throw new Exception("E-posta alanı boş geçilemez");
-		}
+		
 	}
 
 	private void checkIfUserFirstNameIsShort(String firstName) throws Exception {
