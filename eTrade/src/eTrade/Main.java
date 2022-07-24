@@ -20,13 +20,13 @@ public class Main {
 
 		User user1 = new User(1, "İbrahim", "Kaplan", "ibo@hotmail.comm", "rrrrrr");
 		User user2 = new User(2, "İbo", "Kaplan", "kaplan@hotmail.comm", "r6g5gg");
-		User user3 = new User(1, "İbrahim", "Kaplan", "ibo@hotmail.comm", "EEr6g5gg");
+		User user3 = new User(1, "İbrahim", "Kaplan", "ibo@hotmail.comm", "rşşrrr");
 		
 		UserService userService = new UserManager(new HibernateUserRepository(),new VerificationEmailAdapter(),new GoogleAccountAdapter());
 		userService.add(user1);
 		userService.add(user2);
 		//userService.update(user3);
-		userService.login(user2);
+		userService.login(user3);
 		System.out.println("----------------------------------------------");
 		
 		

@@ -152,15 +152,15 @@ public class UserManager implements UserService {
 	
 	private void checkIfUserEmailRegistered(User user) throws Exception {
 		User userFromRepository = getById(user.getId());
-		if(!(userFromRepository.getEmail() == user.getEmail() && userFromRepository.getPassword() == user.getPassword())) {
+		if(!(userFromRepository.getEmail() == user.getEmail())) {
 			throw new Exception("Böyle bir kullanıcı bulunamadı");
 		}
 	}
 	
 	private void checkIfUserPasswordCorrect(User user) throws Exception {
 		User userFromRepository = getById(user.getId());
-		if(!(userFromRepository.getEmail() == user.getEmail() && userFromRepository.getPassword() == user.getPassword())) {
-			throw new Exception("Böyle bir kullanıcı bulunamadı");
+		if(!(userFromRepository.getPassword() == user.getPassword())) {
+			throw new Exception("Şifre hatalı girildi.");
 		}
 	}
 	
