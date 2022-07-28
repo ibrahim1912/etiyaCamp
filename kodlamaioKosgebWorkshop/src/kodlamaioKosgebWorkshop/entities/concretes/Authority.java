@@ -4,16 +4,18 @@ public class Authority {
 
 	private int id;
 	private String authorityType;
-	private AuthorityOfUser authorityOfUser;
+	
+	
 
 	public Authority() {
 
 	}
 
-	public Authority(int id, String authorityType, AuthorityOfUser authorityOfUser) {
+	public Authority(int id, String authorityType) {
 		this.id = id;
 		this.authorityType = authorityType;
-		this.authorityOfUser = authorityOfUser;
+	
+		
 	}
 
 	public int getId() {
@@ -32,11 +34,7 @@ public class Authority {
 		this.authorityType = authorityType;
 	}
 
-	public AuthorityOfUser getAuthorityOfUser() {
-		return authorityOfUser;
-	}
+	
 
-	public void setAuthorityOfUser(AuthorityOfUser authorityOfUser) {
-		this.authorityOfUser = authorityOfUser;
-	}
+	
 }
